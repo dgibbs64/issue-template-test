@@ -1,6 +1,6 @@
 name: Bug Report
-description: Found a bug? Raise a report.
-labels: type: bug
+description: Report broken or incorrect behaviour
+labels: unconfirmed bug
 issue_body: true
 body:
   - type: markdown
@@ -12,8 +12,8 @@ body:
         Please note that this form is for bugs only!
   - type: input
     attributes:
-      label: User Story
-      description: As a [user description], I want [desired action] so that [desired outcome].
+      label: Summary
+      description: A simple summary of your bug report
     validations:
       required: true
   - type: textarea
