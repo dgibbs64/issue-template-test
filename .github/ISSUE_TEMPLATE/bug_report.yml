@@ -57,17 +57,6 @@ body:
         - monitor
         - details
         - update
-        - validate
-        - backup
-        - mods-install
-        - mods-update
-        - mods-remove
-        - debug
-        - console
-        - install
-        - auto-update
-        - update-lgsm
-        - none
       validations:
         required: true
   - type: textarea
