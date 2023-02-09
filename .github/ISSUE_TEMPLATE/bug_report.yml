@@ -65,6 +65,14 @@ body:
     validations:
       required: true
   - type: textarea
+    id: further-info
+    attributes:
+      label: Further information
+      description: A clear description of what the bug is and any ideas on how to resolve it. Plus any further context that might be relevant to the issue.
+      placeholder: Tell us what you see!
+    validations:
+      required: true
+  - type: textarea
     id: logs
     attributes:
       label: Relevant log output
