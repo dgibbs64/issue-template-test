@@ -23,7 +23,7 @@ body:
       options:
         - Yes
         - No
-    validates:
+    validations:
       required: true
   - type: dropdown
     id: on-steam
@@ -33,14 +33,14 @@ body:
       options:
         - Yes
         - No
-    validates:
+    validations:
       required: true
   - type: input
     id: steam-id
     attributes:
       label: Steam ID
       description: What is the Steam ID of the game server? Use SteamDB to get the appid. (https://steamdb.info).
-      placeholder: 892970
+      placeholder: "892970"
     validations:
       required: false
   - type: textarea
