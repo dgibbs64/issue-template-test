@@ -21,7 +21,7 @@ body:
       label: Linux Support
       description: Is the game server on Linux? (not wine)
       options:
-        - Yes
-        - No
+        - test1
+        - test2
     validations:
       required: true
