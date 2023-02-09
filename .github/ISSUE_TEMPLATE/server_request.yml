@@ -19,6 +19,17 @@ body:
     id: on-linux
     attributes:
       label: Linux support
-      description: Does this game server have Linux support?
+      description: Does this game server have Linux support? (not wine)
       options:
-        - label: "yes"
+        - label: "Yes"
+    validations:
+      required: true
+  - type: dropdown
+    id: on-steam
+    attributes:
+      label: Steam
+      description: Is this game server available on Steam?
+      options:
+        - "Yes"
+        - "No"
+        - "Not sure"
