@@ -32,4 +32,5 @@ body:
       options:
         - "Yes"
         - "No"
-        - "Not sure"
+    validations:
+      required: true
