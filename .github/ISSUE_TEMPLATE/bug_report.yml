@@ -43,6 +43,25 @@ body:
         - Other
     validations:
       required: true
+  - type: dropdown
+    id: command
+    attributes:
+      label: Command
+      multiple: true
+      options:
+        - Ubuntu 22.04
+        - Ubuntu 20.04
+        - Ubuntu 18.04
+        - Ubuntu 16.04
+        - Debian 11
+        - Debian 10
+        - Debian 9
+        - RedHat 9
+        - RedHat 8
+        - RedHat 7
+        - Other
+    validations:
+      required: true
   - type: textarea
     id: further-info
     attributes:
