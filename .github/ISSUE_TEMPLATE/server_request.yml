@@ -21,4 +21,4 @@ body:
       label: Linux support
       description: Does this game server have Linux support?
       options:
-        - label: yes
+        - label: "yes"
