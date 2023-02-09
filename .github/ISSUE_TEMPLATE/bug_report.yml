@@ -35,8 +35,8 @@ body:
         - RedHat 8
         - RedHat 7
         - Other
-      validations:
-        required: true
+    validations:
+      required: true
   - type: input
     id: game
     attributes:
@@ -62,8 +62,8 @@ body:
         - RedHat 8
         - RedHat 7
         - Other
-      validations:
-        required: true
+    validations:
+      required: true
   - type: textarea
     id: logs
     attributes:
