@@ -1,3 +1,4 @@
+---
 name: Bug Report
 description: File a bug report
 title: "[Bug]: "
@@ -10,13 +11,13 @@ body:
       value: |
         Thanks for taking the time to fill out this bug report!
   - type: input
-    id: contact
+    id: user-story
     attributes:
-      label: Contact Details
-      description: How can we get in touch with you if we need more info?
-      placeholder: ex. email@example.com
+      label: User story
+      description: As a [user description], I want [desired action] so that [desired outcome].
+      placeholder: As a [user description], I want [desired action] so that [desired outcome].
     validations:
-      required: false
+      required: true
   - type: textarea
     id: what-happened
     attributes:
