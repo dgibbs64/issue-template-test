@@ -19,9 +19,9 @@ body:
     validations:
       required: true
   - type: dropdown
-    id: browsers
+    id: distro
     attributes:
-      label: What browsers are you seeing the problem on?
+      label: Linux distro
       multiple: true
       options:
         - Ubuntu 22.04
@@ -35,6 +35,39 @@ body:
         - RedHat 8
         - RedHat 7
         - Other
+  - type: input
+    id: game
+    attributes:
+      label: Game
+      description: What game server are you hosting?
+      placeholder: Valheim
+    validations:
+      required: true
+  - type: dropdown
+    id: command
+    attributes:
+      label: Command
+      multiple: true
+      options:
+        - start
+        - stop
+        - restart
+        - monitor
+        - details
+        - update
+        - validate
+        - backup
+        - mods-install
+        - mods-update
+        - mods-remove
+        - debug
+        - console
+        - install
+        - auto-update
+        - update-lgsm
+        - none
+      validations:
+        required: true
   - type: textarea
     id: logs
     attributes:
