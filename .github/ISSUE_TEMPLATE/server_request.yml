@@ -16,10 +16,10 @@ body:
     validations:
       required: true
   - type: checkboxes
-    id: operating-systems
+    id: on-linux
     attributes:
-      label: Which operating systems have you used?
-      description: You may select more than one.
+      label: Linux support
+      description: Does this game server have Linux support?
       options:
         - label: macOS
         - label: Windows
