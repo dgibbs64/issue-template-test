@@ -16,21 +16,20 @@ body:
     validations:
       required: true
   - type: checkboxes
-    id: on-linux
+    id: on-Linux
     attributes:
-      label: Linux Support
-      description: Is the game server on Linux? (not wine)
-      required: true
-    validations:
-      required: true
+      label: Does this server support Linux
+      description: Does this server support Linux? (not wine)
+      options:
+        - label: Yes
+          required: true
   - type: checkboxes
     id: on-steam
     attributes:
-      label: Is the server on Steam?
-      description: Is the game server on Steam?
-      required: true
-    validations:
-      required: true
+      label: Is this server on Steam?
+      description: Is this server on Steam?
+      options:
+        - label: Yes
   - type: input
     id: steam-id
     attributes:
