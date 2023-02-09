@@ -81,16 +81,6 @@ body:
       description: What version of LinuxGSM are you running?
       placeholder: v23.3.0
 
-  - type: textarea
-    id: further-info
-    attributes:
-      label: Further information
-      description: A clear description of what the bug is and any ideas on how to resolve it. Plus any further context that might be relevant to the issue.
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
-    validations:
-      required: true
-
   - type: checkboxes
     id: terms
     attributes:
