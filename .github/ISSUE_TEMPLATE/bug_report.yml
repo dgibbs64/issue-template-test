@@ -91,11 +91,3 @@ body:
         2. Click on '....'
         3. Scroll down to '....'
         4. See error
-  - type: checkboxes
-    id: terms
-    attributes:
-      label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
-      options:
-        - label: I agree to follow this project's Code of Conduct
-          required: true

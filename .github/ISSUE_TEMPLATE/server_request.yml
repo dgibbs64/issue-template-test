@@ -37,8 +37,8 @@ body:
   - type: input
     id: steam-id
     attributes:
-      label: Steam ID
-      description: What is the Steam ID of the game server? Use SteamDB to get the appid. (https://steamdb.info).
+      label: Steam appid
+      description: What is the Steam appid of the game server? Use SteamDB to get the appid. (https://steamdb.info).
       placeholder: "892970"
     validations:
       required: false
