@@ -1,46 +1,85 @@
+---
 name: Feature Request
-description: Suggest a feature for this library
-labels: feature request
-issue_body: true
+description: Suggest a feature
+title: "[Feature]: "
+labels: ["type: feature"]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this feature request!
   - type: input
+    id: user-story
     attributes:
-      label: Summary
-      description: >
-        A short summary of what your feature request is.
+      label: User story
+      description: As a [user description], I want [desired action] so that [desired outcome].
+      placeholder: As a [user description], I want [desired action] so that [desired outcome].
     validations:
       required: true
-  - type: dropdown
+  - type: input
+    id: game
     attributes:
-      multiple: false
-      label: What is the feature request for?
-      options:
-        - The core library
-        - discord.ext.commands
-        - discord.ext.tasks
-        - The documentation
-    validations:
-      required: true
-  - type: textarea
-    attributes:
-      label: The Problem
-      description: >
-        What problem is your feature trying to solve?
-        What becomes easier or possible when this feature is implemented?
-    validations:
-      required: true
-  - type: textarea
-    attributes:
-      label: The Ideal Solution
-      description: >
-        What is your ideal solution to the problem?
-        What would you like this feature to do?
-    validations:
-      required: true
-  - type: textarea
-    attributes:
-      label: The Current Solution
-      description: >
-        What is the current solution to the problem, if any?
+      label: Game
+      description: What game server are you hosting?
+      placeholder: Valheim
     validations:
       required: false
+  - type: dropdown
+    id: distro
+    attributes:
+      label: Linux distro
+      multiple: true
+      options:
+        - Ubuntu 22.04
+        - Ubuntu 20.04
+        - Ubuntu 18.04
+        - Ubuntu 16.04
+        - Debian 11
+        - Debian 10
+        - Debian 9
+        - RedHat 9
+        - RedHat 8
+        - RedHat 7
+        - Other
+    validations:
+      required: false
+  - type: dropdown
+    id: command
+    attributes:
+      label: Command
+      multiple: true
+      options:
+        - start
+        - stop
+        - restart
+        - monitor
+        - details
+        - update
+        - validate
+        - backup
+        - mods-install
+        - mods-update
+        - mods-remove
+        - debug
+        - console
+        - install
+        - auto-update
+        - update-lgsm
+        - none
+    validations:
+      required: true
+  - type: textarea
+    id: further-info
+    attributes:
+      label: Further information
+      description: A clear description of what the feature is and any ideas on how to achieve this.
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
