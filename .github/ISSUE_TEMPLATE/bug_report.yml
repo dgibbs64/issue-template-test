@@ -56,6 +56,10 @@ body:
         - details
         - update
         - validate
+        - backup
+        - mods-install
+        - mods-update
+        - mods-remove
     validations:
       required: true
   - type: textarea
