@@ -9,7 +9,6 @@ body:
     attributes:
       value: |
         Thanks for taking the time to fill out this bug report!
-
   - type: input
     id: user-story
     attributes:
@@ -18,7 +17,6 @@ body:
       placeholder: As a [user description], I want [desired action] so that [desired outcome].
     validations:
       required: true
-
   - type: dropdown
     id: distro
     attributes:
@@ -38,7 +36,6 @@ body:
         - Other
       validations:
         required: true
-
   - type: input
     id: game
     attributes:
@@ -47,7 +44,6 @@ body:
       placeholder: Valheim
     validations:
       required: true
-
   - type: dropdown
     id: command
     attributes:
@@ -73,14 +69,32 @@ body:
         - none
       validations:
         required: true
-
   - type: input
     id: version
     attributes:
       label: Version
       description: What version of LinuxGSM are you running?
       placeholder: v23.3.0
-
+  - type: textarea
+    id: further-info
+    attributes:
+      label: Further information
+      description: A clear description of what the bug is and any ideas on how to resolve it. Plus any further context that might be relevant to the issue.
+      placeholder: Tell us what you see!
+      value: "A bug happened!"
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      render: shell
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
   - type: checkboxes
     id: terms
     attributes:
