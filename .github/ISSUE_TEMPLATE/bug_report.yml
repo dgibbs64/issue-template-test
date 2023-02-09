@@ -60,6 +60,11 @@ body:
         - mods-install
         - mods-update
         - mods-remove
+        - debug
+        - console
+        - install
+        - auto-update
+        - update-lgsm
     validations:
       required: true
   - type: textarea
