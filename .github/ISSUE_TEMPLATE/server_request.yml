@@ -18,11 +18,10 @@ body:
   - type: checkboxes
     id: on-Linux
     attributes:
-      label: Does this server support Linux
+      label: Does this server support Linux?
       description: Does this server support Linux? (not wine)
       options:
         - label: Yes
-          required: true
   - type: checkboxes
     id: on-steam
     attributes:
