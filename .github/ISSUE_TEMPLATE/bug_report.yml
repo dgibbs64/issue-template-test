@@ -43,8 +43,8 @@ body:
       label: Game
       description: What game server are you hosting?
       placeholder: Valheim
-      validations:
-        required: true
+    validations:
+      required: true
   - type: dropdown
     id: command
     attributes:
