@@ -16,16 +16,11 @@ body:
     validations:
       required: true
   - type: checkboxes
-    id: on-Linux
+    id: operating-systems
     attributes:
-      label: Does this server support Linux?
-      description: Does this server support Linux? (not wine)
+      label: Which operating systems have you used?
+      description: You may select more than one.
       options:
-        - label: Yes
-  - type: checkboxes
-    id: on-steam
-    attributes:
-      label: Is this server on Steam?
-      description: Is this server on Steam?
-      options:
-        - label: Yes
+        - label: macOS
+        - label: Windows
+        - label: Linux
