@@ -19,10 +19,10 @@ body:
     validations:
       required: true
   - type: dropdown
-    id: version
+    id: browsers
     attributes:
-      label: Version
-      description: What version of our software are you running?
+      label: What browsers are you seeing the problem on?
+      multiple: true
       options:
         - Ubuntu 22.04
         - Ubuntu 20.04
@@ -35,19 +35,6 @@ body:
         - RedHat 8
         - RedHat 7
         - Other
-    validations:
-      required: true
-
-  - type: dropdown
-    id: browsers
-    attributes:
-      label: What browsers are you seeing the problem on?
-      multiple: true
-      options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
   - type: textarea
     id: logs
     attributes:
