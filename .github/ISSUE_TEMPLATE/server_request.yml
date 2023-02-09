@@ -15,13 +15,40 @@ body:
       description: What game server would you like to add?
     validations:
       required: true
-  - type: dropdown
+  - type: checkboxes
     id: on-linux
     attributes:
       label: Linux Support
       description: Is the game server on Linux? (not wine)
-      options:
-        - test1
-        - test2
+      required: true
     validations:
       required: true
+  - type: checkboxes
+    id: on-steam
+    attributes:
+      label: Is the server on Steam?
+      description: Is the game server on Steam?
+      required: true
+    validations:
+      required: true
+  - type: input
+    id: steam-id
+    attributes:
+      label: Steam ID
+      description: What is the Steam ID of the game server? Use SteamDB to get the appid. (https://steamdb.info).
+      placeholder: "892970"
+    validations:
+      required: false
+  - type: textarea
+    id: guides
+    attributes:
+      label: Guides
+      description: Links to guides on how to install the game server
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
