@@ -65,7 +65,6 @@ body:
         - install
         - auto-update
         - update-lgsm
-        - none
     validations:
       required: true
   - type: textarea
