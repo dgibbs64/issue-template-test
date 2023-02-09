@@ -19,27 +19,25 @@ body:
     validations:
       required: true
   - type: dropdown
-    id: distro
-    attributes:
-      label: Distro
-      multiple: true
-      options:
-        - Ubuntu 22.04
-        - Ubuntu 20.04
-        - Ubuntu 18.04
-        - Ubuntu 16.04
-      validations:
-        required: true
-  - type: dropdown
     id: version
     attributes:
       label: Version
       description: What version of our software are you running?
       options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
+        - Ubuntu 22.04
+        - Ubuntu 20.04
+        - Ubuntu 18.04
+        - Ubuntu 16.04
+        - Debian 11
+        - Debian 10
+        - Debian 9
+        - RedHat 9
+        - RedHat 8
+        - RedHat 7
+        - Other
     validations:
       required: true
+
   - type: dropdown
     id: browsers
     attributes:
