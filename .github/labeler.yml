@@ -1,4 +1,4 @@
 critical:
-  - "(critical|urgent)"
+  - (critical|urgent)/i
 bug:
-  - "(bug|defect)"
+  - (bug|defect)/i
